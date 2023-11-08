@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>상품리스트</title>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <td>상품id</td>
+            <td>상품명</td>
+            <td>상품가격</td>
+            <td>재고수량</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="product : ${products}">
+            <td>
+                <a href="@{product/info?id=${product.productId}">
+                    ${product.id}
+                </a>
+            </td>
+            <td>
+                <a href="@{product/info?id=${product.productId}">
+                    ${product.name}
+                </a>
+            </td>
+            <td>
+                ${product.price}
+            </td>
+            <td>
+                ${product.quantity}
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

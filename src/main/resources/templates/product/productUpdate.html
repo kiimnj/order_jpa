@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>상품상세</title>
+</head>
+<body>
+    <div>
+<!--    <div th:object="${product}">-->
+        <input type="text" th:value="${product.productId}" readonly>
+        <input type="text" th:value="${product.name}" readonly>
+        <input type="text" th:value="${product.price}" readonly>
+        <input type="text" th:value="${product.quantity}" readonly>
+    </div>
+</body>
+</html>
