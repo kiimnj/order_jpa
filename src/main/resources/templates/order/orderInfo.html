@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>상품상세</title>
+</head>
+<body>
+<div th:object="${order}">
+    <div>
+        <input type="text" th:value="*{user.name}" readonly>
+    </div>
+    <ul th:each="orderProduct : *{orderProducts}">
+        <li>
+            <input type="text" th:value="${orderProduct.product.name}" readonly>
+        </li>
+        <li>
+            <!--    *{}에 붉은 줄은 모델을 넘기지 않아서-->
+            <input type="text" th:value="${orderProduct.orderPrice}" readonly>
+        </li>
+        <li>
+            <input type="text" th:value="${orderProduct.orderQuantity}" readonly>
+
+        </li>
+    </ul>
+</div>
+<div>
+    <button th:onClick="|location.href='@/order/list/{userId}(userId = *{order.user.userId})'|">이전으로</button>
+</div>
+</body>
+</html>
