@@ -1,6 +1,6 @@
 package com.example.order_jpa.controller;
 
-import com.example.order_jpa.Service.UserService;
+import com.example.order_jpa.service.UserService;
 import com.example.order_jpa.entity.User;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;

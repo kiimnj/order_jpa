@@ -1,13 +1,9 @@
-package com.example.order_jpa.Service;
+package com.example.order_jpa.service;
 
 import com.example.order_jpa.dto.ProductUpdateDto;
-import com.example.order_jpa.dto.UserUpdateDto;
 import com.example.order_jpa.entity.Product;
-import com.example.order_jpa.entity.User;
 import com.example.order_jpa.repository.JPAProductRepository;
-import com.example.order_jpa.repository.JPAUserRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

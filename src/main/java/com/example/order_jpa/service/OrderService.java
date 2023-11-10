@@ -1,4 +1,4 @@
-package com.example.order_jpa.Service;
+package com.example.order_jpa.service;
 
 import com.example.order_jpa.dto.OrderDto;
 import com.example.order_jpa.entity.*;
@@ -10,7 +10,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
